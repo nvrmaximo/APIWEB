@@ -1,0 +1,99 @@
+crear el proyecto
+
+escojer aplicacion web ASP.NET(NET Framework) y que sea de c#
+despues ecojer web api desmarcar el check de https 
+
+en la carpeta models añadir un nuevo elemento agregar la libreria 
+ADO .NET entiti framework seleccionamos la opcion de EF Designer
+
+luego nos situamos en los controladores y 
+
+-------------------------------------------------------------
+
+importa librerias en nuestro conex.cs
+
+using System.Data;
+using System.Web;
+using System.Web.Http;
+using System.Data.SqlClient;
+
+-------------------------------------------------------------------
+COMANDOS POSTGRE
+
+listar bases de datos = \l
+listar tablas en la bse de datos= \d
+carmbiar db = \c nombre
+
+leer comandos de un archivo = \i C:/tmp/big.sql
+
+
+-------------------------------------------------------------------
+   public static class EntradaPadron implements Serializable {
+        private Integer cedula;
+        private Integer centro;
+        private Integer sexo;
+        private Integer expiracion;
+        private Integer junta;
+        private String nombres;
+        private String apellido1;
+        private String apellido2;
+
+        public EntradaPadron() {
+            this.cedula = null;
+            this.centro = null;
+            this.sexo = null;
+            this.expiracion = null;
+            this.junta = null;
+            this.nombres = null;
+            this.apellido1 = null;
+            this.apellido2 = null;
+        }
+
+        public EntradaPadron(Integer cedula, Integer centro, Integer sexo, Integer expiracion, Integer junta, String nombres, String apellido1, String apellido2) {
+            this.cedula = cedula;
+            this.centro = centro;
+            this.expiracion = expiracion;
+            this.junta = junta;
+            this.nombres = nombres;
+            this.apellido1 = apellido1;
+            this.apellido2 = apellido2;
+        }
+
+        public Integer getCedula() { return cedula; }
+
+        public void setCedula(Integer cedula) { this.cedula = cedula; }
+
+        public Integer getCentro() { return centro; }
+
+        public void setCentro(Integer centro) { this.centro = centro; }
+
+        public Integer getSexo() { return sexo; }
+
+        public void setSexo(Integer sexo) { this.sexo = sexo; }
+
+        public Integer getExpiracion() { return expiracion; }
+
+        public void setExpiracion(Integer expiracion) { this.expiracion = expiracion; }
+
+        public Integer getJunta() { return junta; }
+
+        public void setJunta(Integer junta) { this.junta = junta; }
+
+        public String getNombres() { return nombres; }
+
+        public void setNombres(String nombres) { this.nombres = nombres; }
+
+        public String getApellido1() { return apellido1; }
+
+        public void setApellido1(String apellido1) { this.apellido1 = apellido1; }
+
+        public String getApellido2() { return apellido2; }
+
+        public void setApellido2(String apellido2) { this.apellido2 = apellido2; }
+    }
+
+
+stringtype unspecified
+  
+
+
